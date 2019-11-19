@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sjpalacio\\Desktop\\DATOS\\SumateGIT\\SumateDos\\AccesoADatos\\AccesoADatos.csproj": {}
+    "C:\\Magodoy\\Mikael\\Archivo de Trabajos\\YPF\\02.Versionado\\YPFGIT\\SumateDos\\AccesoADatos\\AccesoADatos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sjpalacio\\Desktop\\DATOS\\SumateGIT\\SumateDos\\AccesoADatos\\AccesoADatos.csproj": {
+    "C:\\Magodoy\\Mikael\\Archivo de Trabajos\\YPF\\02.Versionado\\YPFGIT\\SumateDos\\AccesoADatos\\AccesoADatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sjpalacio\\Desktop\\DATOS\\SumateGIT\\SumateDos\\AccesoADatos\\AccesoADatos.csproj",
+        "projectUniqueName": "C:\\Magodoy\\Mikael\\Archivo de Trabajos\\YPF\\02.Versionado\\YPFGIT\\SumateDos\\AccesoADatos\\AccesoADatos.csproj",
         "projectName": "AccesoADatos",
-        "projectPath": "C:\\Users\\sjpalacio\\Desktop\\DATOS\\SumateGIT\\SumateDos\\AccesoADatos\\AccesoADatos.csproj",
-        "packagesPath": "C:\\Users\\sjpalacio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sjpalacio\\Desktop\\DATOS\\SumateGIT\\SumateDos\\AccesoADatos\\obj\\",
+        "projectPath": "C:\\Magodoy\\Mikael\\Archivo de Trabajos\\YPF\\02.Versionado\\YPFGIT\\SumateDos\\AccesoADatos\\AccesoADatos.csproj",
+        "packagesPath": "C:\\Users\\magodoy\\.nuget\\packages\\",
+        "outputPath": "C:\\Magodoy\\Mikael\\Archivo de Trabajos\\YPF\\02.Versionado\\YPFGIT\\SumateDos\\AccesoADatos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\sjpalacio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\magodoy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

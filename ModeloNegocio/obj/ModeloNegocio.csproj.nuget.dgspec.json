@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sjpalacio\\Desktop\\DATOS\\SumateGIT\\SumateDos\\ModeloNegocio\\ModeloNegocio.csproj": {}
+    "C:\\Magodoy\\Mikael\\Archivo de Trabajos\\YPF\\02.Versionado\\YPFGIT\\SumateDos\\ModeloNegocio\\ModeloNegocio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sjpalacio\\Desktop\\DATOS\\SumateGIT\\SumateDos\\ModeloNegocio\\ModeloNegocio.csproj": {
+    "C:\\Magodoy\\Mikael\\Archivo de Trabajos\\YPF\\02.Versionado\\YPFGIT\\SumateDos\\ModeloNegocio\\ModeloNegocio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sjpalacio\\Desktop\\DATOS\\SumateGIT\\SumateDos\\ModeloNegocio\\ModeloNegocio.csproj",
+        "projectUniqueName": "C:\\Magodoy\\Mikael\\Archivo de Trabajos\\YPF\\02.Versionado\\YPFGIT\\SumateDos\\ModeloNegocio\\ModeloNegocio.csproj",
         "projectName": "ModeloNegocio",
-        "projectPath": "C:\\Users\\sjpalacio\\Desktop\\DATOS\\SumateGIT\\SumateDos\\ModeloNegocio\\ModeloNegocio.csproj",
-        "packagesPath": "C:\\Users\\sjpalacio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sjpalacio\\Desktop\\DATOS\\SumateGIT\\SumateDos\\ModeloNegocio\\obj\\",
+        "projectPath": "C:\\Magodoy\\Mikael\\Archivo de Trabajos\\YPF\\02.Versionado\\YPFGIT\\SumateDos\\ModeloNegocio\\ModeloNegocio.csproj",
+        "packagesPath": "C:\\Users\\magodoy\\.nuget\\packages\\",
+        "outputPath": "C:\\Magodoy\\Mikael\\Archivo de Trabajos\\YPF\\02.Versionado\\YPFGIT\\SumateDos\\ModeloNegocio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\sjpalacio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\magodoy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
