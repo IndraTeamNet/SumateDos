@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumateDos", "SumateDos.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModeloNegocios", "..\ModeloNegocios\ModeloNegocios.csproj", "{E14A3BBB-0A9D-47BC-8109-A800435FC3C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModeloEntidades", "ModeloEntidades\ModeloEntidades.csproj", "{EB574943-CCCD-4B22-B3D3-DC07B46DB3BA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModeloEntidades", "..\ModeloEntidades\ModeloEntidades.csproj", "{EB574943-CCCD-4B22-B3D3-DC07B46DB3BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
