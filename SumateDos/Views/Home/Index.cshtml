@@ -1,31 +1,360 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿
+@{
+    ViewBag.Title = "ConsultaEventos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<h2>ConsultaEventos</h2>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+<div class="content-wrap">
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 p-r-0 title-margin-right">
+                    <div class="page-header">
+                        <div class="page-title">
+                            <h1>Consulta de Eventos</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-l-0 title-margin-left">
+                    <div class="page-header">
+                        <div class="page-title">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card alert">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="tags">Barrio: </label>
+                                        <div class="input-group">
+                                            <input id="Profesor" class="form-control input-flat" placeholder="Ingrese el Barrio">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group hidden">
+                                    <input type="text" class="form-control" id="hdfProSel" />
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="form-group">
+                                        <label id="aluOEmp">Ciclo Lectivo</label>
+                                        <select id="selAnioLectivo" class="form-control bg-ash border-none">
+                                            <option value="2017">2017</option>
+                                            <option value="2018" selected>2018</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2020">2020</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button type="button" class="btn m-b-10 m-t-35 btn-success m-r-10 sbmt-btn border-none">Buscar</button>
+                                    @*<button type="button" id="btnLimpiar" class="btn m-b-10 m-t-35 btn-primary m-r-10 sbmt-btn border-none pull-left">Limpiar</button>*@
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label for="tags">Localidad:</label>
+                                            <div class="input-group">
+                                                <input id="Profesor" class="form-control input-flat" placeholder="Ingrese la Localidad">
+                                                <div class="input-group-addon">
+                                                    <i class="fa fa-search"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label for="tags">Localidad:</label>
+                                            <div class="input-group">
+                                                <input id="Profesor" class="form-control input-flat" placeholder="Ingrese la Localidad">
+                                                <div class="input-group-addon">
+                                                    <i class="fa fa-search"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="main-content">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card alert">
+                            <div class="card-header m-b-20">
+                                <h4>Consulta de Eventos / Empresa: DELTEC</h4>
+                            </div>
+                            <div class="bootstrap-data-table-panel">
+                                <div class="table-responsive">
+                                    <table id="tablaDatos" class="table table-bordered table-responsive table-hover table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Estado</th>
+                                                <th scope="col">Tiempo</th>
+                                                <th scope="col">Actividad</th>
+                                                <th scope="col">Agencia</th>
+                                                <th scope="col">Barrio</th>
+                                                <th scope="col">Localidad</th>
+                                                <th scope="col">Municipio</th>
+                                                <th scope="col">Placa</th>
+                                                <th scope="col">Fecha Cargue</th>
+                                                <th scope="col">Fecha Inicio</th>
+                                                <th scope="col">Fecha Termino</th>
+                                                <th scope="col">Tipo</th>
+                                                <th scope="col">Colaborador</th>
+                                                <th scope="col">Responsable</th>
+                                                <th scope="col">Cedula Responsable</th>
+                                                <th scope="col">Direccion</th>
+                                                <th scope="col">TipoTrabajo</th>
+                                                <th scope="col">coordY</th>
+                                                <th scope="col">Origen</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>ABIERTO</td>
+                                                <td>0 / 0:00:23</td>
+                                                <td>
+                                                    <a onclick="return SeleccionarEvento('DELTEC_AP_3708','604496','515377');" id="GridView1_ctl02_bt_Seleccionar" href="javascript:__doPostBack('GridView1$ctl02$bt_Seleccionar','')">DELTEC_AP_3708</a>
+                                                </td>
+                                                <td>DELTEC MANT. AP SUR</td>
+                                                <td>LA PORCIUNCULA</td>
+                                                <td>&nbsp;</td>
+                                                <td>BOGOT&#193;</td>
+                                                <td>WNW198</td>
+                                                <td>25/11/2019 08:14:57</td>
+                                                <td>25/11/2019 08:17:00</td>
+                                                <td>25/11/2019 14:00:00</td>
+                                                <td>&nbsp;</td>
+                                                <td>DELTEC</td>
+                                                <td>TUQUERRES FABIAN ALEXANDER</td>
+                                                <td>1061721132</td>
+                                                <td>KR 13 ESTE CON CL 76 B SUR ESQ</td>
+                                                <td>MANTENIMIENTO AP</td>
+                                                <td>3107753487</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ABIERTO</td>
+                                                <td>0 / 0:00:23</td>
+                                                <td>
+                                                    <a onclick="return SeleccionarEvento('DELTEC_AP_3709','604496','515377');" id="GridView1_ctl03_bt_Seleccionar" href="javascript:__doPostBack('GridView1$ctl03$bt_Seleccionar','')">DELTEC_AP_3709</a>
+                                                </td>
+                                                <td>DELTEC MANT. AP SUR</td>
+                                                <td>LA PORCIUNCULA</td>
+                                                <td>&nbsp;</td>
+                                                <td>BOGOT&#193;</td>
+                                                <td>WNW198</td>
+                                                <td>25/11/2019 08:14:57</td>
+                                                <td>25/11/2019 08:17:00</td>
+                                                <td>25/11/2019 14:00:00</td>
+                                                <td>&nbsp;</td>
+                                                <td>DELTEC</td>
+                                                <td>TUQUERRES FABIAN ALEXANDER</td>
+                                                <td>1061721132</td>
+                                                <td>KR 13 F ESTE NO 76 B - 25 SUR</td>
+                                                <td>MANTENIMIENTO AP</td>
+                                                <td>3107753487</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ABIERTO</td>
+                                                <td>0 / 0:00:23</td>
+                                                <td>
+                                                    <a onclick="return SeleccionarEvento('DELTEC_AP_3710','604496','515377');" id="GridView1_ctl04_bt_Seleccionar" href="javascript:__doPostBack('GridView1$ctl04$bt_Seleccionar','')">DELTEC_AP_3710</a>
+                                                </td>
+                                                <td>DELTEC MANT. AP SUR</td>
+                                                <td>LA PORCIUNCULA</td>
+                                                <td>&nbsp;</td>
+                                                <td>BOGOT&#193;</td>
+                                                <td>WNW198</td>
+                                                <td>25/11/2019 08:14:57</td>
+                                                <td>25/11/2019 08:17:00</td>
+                                                <td>25/11/2019 14:00:00</td>
+                                                <td>&nbsp;</td>
+                                                <td>DELTEC</td>
+                                                <td>TUQUERRES FABIAN ALEXANDER</td>
+                                                <td>1061721132</td>
+                                                <td>KR 13 F ESTE NO 76 B - 37 SUR</td>
+                                                <td>MANTENIMIENTO AP</td>
+                                                <td>3107753487</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ABIERTO</td>
+                                                <td>0 / 0:00:23</td>
+                                                <td>
+                                                    <a onclick="return SeleccionarEvento('DELTEC_AP_3711','604496','515377');" id="GridView1_ctl05_bt_Seleccionar" href="javascript:__doPostBack('GridView1$ctl05$bt_Seleccionar','')">DELTEC_AP_3711</a>
+                                                </td>
+                                                <td>DELTEC MANT. AP SUR</td>
+                                                <td>LA PORCIUNCULA</td>
+                                                <td>&nbsp;</td>
+                                                <td>BOGOT&#193;</td>
+                                                <td>WNW198</td>
+                                                <td>25/11/2019 08:14:57</td>
+                                                <td>25/11/2019 08:17:00</td>
+                                                <td>25/11/2019 14:00:00</td>
+                                                <td>&nbsp;</td>
+                                                <td>DELTEC</td>
+                                                <td>TUQUERRES FABIAN ALEXANDER</td>
+                                                <td>1061721132</td>
+                                                <td>KR 13 D ESTE NO 76 D SUR - 35</td>
+                                                <td>MANTENIMIENTO AP</td>
+                                                <td>3107753487</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ABIERTO</td>
+                                                <td>0 / 0:00:23</td>
+                                                <td>
+                                                    <a onclick="return SeleccionarEvento('DELTEC_AP_3712','599113','513846');" id="GridView1_ctl06_bt_Seleccionar" href="javascript:__doPostBack('GridView1$ctl06$bt_Seleccionar','')">DELTEC_AP_3712</a>
+                                                </td>
+                                                <td>DELTEC MANT. AP SUR</td>
+                                                <td>No Georeferenciado</td>
+                                                <td>&nbsp;</td>
+                                                <td>BOGOT&#193;</td>
+                                                <td>WNW198</td>
+                                                <td>25/11/2019 08:14:57</td>
+                                                <td>25/11/2019 08:17:00</td>
+                                                <td>25/11/2019 14:00:00</td>
+                                                <td>&nbsp;</td>
+                                                <td>DELTEC</td>
+                                                <td>TUQUERRES FABIAN ALEXANDER</td>
+                                                <td>1061721132</td>
+                                                <td>KR 10 NO 30 C SUR - 51</td>
+                                                <td>MANTENIMIENTO AP</td>
+                                                <td>3107753487</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ABIERTO</td>
+                                                <td>0 / 0:00:23</td>
+                                                <td>
+                                                    <a onclick="return SeleccionarEvento('DELTEC_AP_3713','599113','513846');" id="GridView1_ctl07_bt_Seleccionar" href="javascript:__doPostBack('GridView1$ctl07$bt_Seleccionar','')">DELTEC_AP_3713</a>
+                                                </td>
+                                                <td>DELTEC MANT. AP SUR</td>
+                                                <td>No Georeferenciado</td>
+                                                <td>&nbsp;</td>
+                                                <td>BOGOT&#193;</td>
+                                                <td>WNW198</td>
+                                                <td>25/11/2019 08:14:57</td>
+                                                <td>25/11/2019 08:17:00</td>
+                                                <td>25/11/2019 14:00:00</td>
+                                                <td>&nbsp;</td>
+                                                <td>DELTEC</td>
+                                                <td>TUQUERRES FABIAN ALEXANDER</td>
+                                                <td>1061721132</td>
+                                                <td>KR 7 NO 79 - 24 SUR PQ</td>
+                                                <td>MANTENIMIENTO AP</td>
+                                                <td>3107753487</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ABIERTO</td>
+                                                <td>0 / 0:00:23</td>
+                                                <td>
+                                                    <a onclick="return SeleccionarEvento('DELTEC_AP_3714','598963','514158');" id="GridView1_ctl08_bt_Seleccionar" href="javascript:__doPostBack('GridView1$ctl08$bt_Seleccionar','')">DELTEC_AP_3714</a>
+                                                </td>
+                                                <td>DELTEC MANT. AP SUR</td>
+                                                <td>CIUDAD SALITRE OCCIDENTAL</td>
+                                                <td>&nbsp;</td>
+                                                <td>BOGOT&#193;</td>
+                                                <td>WNW198</td>
+                                                <td>25/11/2019 08:14:57</td>
+                                                <td>25/11/2019 08:17:00</td>
+                                                <td>25/11/2019 14:00:00</td>
+                                                <td>&nbsp;</td>
+                                                <td>DELTEC</td>
+                                                <td>TUQUERRES FABIAN ALEXANDER</td>
+                                                <td>1061721132</td>
+                                                <td>CL 25 SUR NO 24 F - 51</td>
+                                                <td>MANTENIMIENTO AP</td>
+                                                <td>3107753487</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ABIERTO</td>
+                                                <td>0 / 0:00:23</td>
+                                                <td>
+                                                    <a onclick="return SeleccionarEvento('DELTEC_AP_3715','604496','515377');" id="GridView1_ctl09_bt_Seleccionar" href="javascript:__doPostBack('GridView1$ctl09$bt_Seleccionar','')">DELTEC_AP_3715</a>
+                                                </td>
+                                                <td>DELTEC MANT. AP SUR</td>
+                                                <td>LA PORCIUNCULA</td>
+                                                <td>&nbsp;</td>
+                                                <td>BOGOT&#193;</td>
+                                                <td>WNW198</td>
+                                                <td>25/11/2019 08:14:57</td>
+                                                <td>25/11/2019 08:17:00</td>
+                                                <td>25/11/2019 14:00:00</td>
+                                                <td>&nbsp;</td>
+                                                <td>DELTEC</td>
+                                                <td>TUQUERRES FABIAN ALEXANDER</td>
+                                                <td>1061721132</td>
+                                                <td>CL 76 SUR NO 13 C - 39 ESTE</td>
+                                                <td>MANTENIMIENTO AP</td>
+                                                <td>3107753487</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ABIERTO</td>
+                                                <td>0 / 0:00:23</td>
+                                                <td>
+                                                    <a onclick="return SeleccionarEvento('DELTEC_AP_3716','599113','513846');" id="GridView1_ctl10_bt_Seleccionar" href="javascript:__doPostBack('GridView1$ctl10$bt_Seleccionar','')">DELTEC_AP_3716</a>
+                                                </td>
+                                                <td>DELTEC MANT. AP SUR</td>
+                                                <td>No Georeferenciado</td>
+                                                <td>&nbsp;</td>
+                                                <td>BOGOT&#193;</td>
+                                                <td>WNW198</td>
+                                                <td>25/11/2019 08:14:57</td>
+                                                <td>25/11/2019 08:17:00</td>
+                                                <td>25/11/2019 14:00:00</td>
+                                                <td>&nbsp;</td>
+                                                <td>DELTEC</td>
+                                                <td>TUQUERRES FABIAN ALEXANDER</td>
+                                                <td>1061721132</td>
+                                                <td>KR 1 CON CL 75 SUR 1-ORI</td>
+                                                <td>MANTENIMIENTO AP</td>
+                                                <td>3107753487</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ABIERTO</td>
+                                                <td>0 / 0:00:23</td>
+                                                <td>
+                                                    <a onclick="return SeleccionarEvento('DELTEC_AP_3717','599113','513846');" id="GridView1_ctl11_bt_Seleccionar" href="javascript:__doPostBack('GridView1$ctl11$bt_Seleccionar','')">DELTEC_AP_3717</a>
+                                                </td>
+                                                <td>DELTEC MANT. AP SUR</td>
+                                                <td>No Georeferenciado</td>
+                                                <td>&nbsp;</td>
+                                                <td>BOGOT&#193;</td>
+                                                <td>WNW198</td>
+                                                <td>25/11/2019 08:14:57</td>
+                                                <td>25/11/2019 08:17:00</td>
+                                                <td>25/11/2019 14:00:00</td>
+                                                <td>&nbsp;</td>
+                                                <td>DELTEC</td>
+                                                <td>TUQUERRES FABIAN ALEXANDER</td>
+                                                <td>1061721132</td>
+                                                <td>KR 52 F BIS NO 5 B 08</td>
+                                                <td>MANTENIMIENTO AP</td>
+                                                <td>3107753487</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 </div>

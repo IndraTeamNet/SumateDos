@@ -1,0 +1,97 @@
+﻿
+@{
+    ViewBag.Title = "ConsultaEventos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ConsultaEventos</h2>
+
+<div class="content-wrap">
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 p-r-0 title-margin-right">
+                    <div class="page-header">
+                        <div class="page-title">
+                            <h1>Consulta de Cursos por Profesor</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-l-0 title-margin-left">
+                    <div class="page-header">
+                        <div class="page-title">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card alert">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="tags">Buscar Profesor: </label>
+                                        <div class="input-group">
+                                            <input id="Profesor" class="form-control input-flat" placeholder="Ingrese Nombre y Apelido">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-search"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group hidden">
+                                    <input type="text" class="form-control" id="hdfProSel" />
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="form-group">
+                                        <label id="aluOEmp">Ciclo Lectivo</label>
+                                        <select id="selAnioLectivo" class="form-control bg-ash border-none">
+                                            <option value="2017">2017</option>
+                                            <option value="2018" selected>2018</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2020">2020</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button type="button" class="btn m-b-10 m-t-35 btn-success m-r-10 sbmt-btn border-none" onclick="GetListadoCursosProfesores();">Buscar</button>
+                                    @*<button type="button" id="btnLimpiar" class="btn m-b-10 m-t-35 btn-primary m-r-10 sbmt-btn border-none pull-left">Limpiar</button>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="main-content">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card alert">
+                            <div class="card-header m-b-20">
+                                <h4>Listado de Cuotas</h4>
+                            </div>
+                            <div class="bootstrap-data-table-panel">
+                                <div class="table-responsive">
+                                    <table id="tablaDatos" class="table table-bordered table-responsive table-hover table-striped tabla-centrada">
+                                        <thead>
+                                            <tr>
+                                                <th>Profesor</th>
+                                                <th>Ciclo Lectivo</th>
+                                                <th>Comisión</th>
+                                                <th>Fecha Inicio</th>
+                                                <th>Aula</th>
+                                                <th>Dia</th>
+                                                <th>Desde</th>
+                                                <th>Hasta</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
