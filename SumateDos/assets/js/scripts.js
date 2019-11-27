@@ -64,14 +64,14 @@
 
 
     /*  Auto date in footer and refresh
-    --------------------------------------*/
+    --------------------------------------
 
     document.getElementById("date-time").innerHTML = Date();
 
     $('.page-refresh').on("click", function() {
         location.reload();
     });
-
+    */
 
     /* TO DO LIST 
     --------------------*/
@@ -136,9 +136,9 @@
     /*  Vertical Carousel
     ---------------------------*/
 
-    $('#verticalCarousel').carousel({
-        interval: 2000
-    })
+    //$('#verticalCarousel').carousel({
+    //    interval: 2000
+    //})
 
     $(window).bind("resize", function() {
         console.log($(this).width())
@@ -149,6 +149,14 @@
         }
     }).trigger('resize');
 
+
+    /*  Pignose Calendar
+    ---------------------------*/
+
+    //$('.calendar').pignoseCalendar({
+    //    lang: 'es',
+    //    format: 'DD/MM/YYYY'
+    //});
 
 
     /*  Search
@@ -177,9 +185,9 @@
     /*  pace Loader
     -------------*/
 
-    paceOptions = {
-        elements: true
-    };
+    //paceOptions = {
+    //    elements: true
+    //};
 
 
 

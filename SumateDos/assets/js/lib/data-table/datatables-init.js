@@ -22,7 +22,7 @@
         ]
     });
 	
-	$('#row-select').DataTable( {
+	$('.table').DataTable( {
 			initComplete: function () {
 				this.api().columns().every( function () {
 					var column = this;

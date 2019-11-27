@@ -1,0 +1,9 @@
+C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\Modelo\bin\Debug\Modelo.dll
+C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\Modelo\bin\Debug\Modelo.pdb
+C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\Modelo\bin\Debug\AccesoADatos.dll
+C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\Modelo\bin\Debug\AccesoADatos.pdb
+C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\Modelo\bin\Debug\AccesoADatos.dll.config
+C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\Modelo\obj\Debug\Modelo.csprojAssemblyReference.cache
+C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\Modelo\obj\Debug\Modelo.dll
+C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\Modelo\obj\Debug\Modelo.pdb

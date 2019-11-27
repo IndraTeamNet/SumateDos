@@ -1,0 +1,8 @@
+C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\AccesoADatos\bin\Debug\AccesoADatos.dll.config
+C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\AccesoADatos\bin\Debug\AccesoADatos.dll
+C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\AccesoADatos\bin\Debug\AccesoADatos.pdb
+C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\AccesoADatos\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\AccesoADatos\obj\Debug\AccesoADatos.csprojAssemblyReference.cache
+C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\AccesoADatos\obj\Debug\AccesoADatos.csproj.CopyComplete
+C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\AccesoADatos\obj\Debug\AccesoADatos.dll
+C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\AccesoADatos\obj\Debug\AccesoADatos.pdb

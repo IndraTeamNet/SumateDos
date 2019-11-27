@@ -5,7 +5,6 @@
 }
 
 <h2>ConsultaEventos</h2>
-
 <div class="content-wrap">
     <div class="main">
         <div class="container-fluid">
@@ -13,7 +12,7 @@
                 <div class="col-md-8 p-r-0 title-margin-right">
                     <div class="page-header">
                         <div class="page-title">
-                            <h1>Consulta de Cursos por Profesor</h1>
+                            <h1>Consulta de Eventos</h1>
                         </div>
                     </div>
                 </div>
@@ -31,9 +30,9 @@
                             <div class="row">
                                 <div class="col-sm-4">
                                     <div class="form-group">
-                                        <label for="tags">Buscar Profesor: </label>
+                                        <label for="tags">Filtros Eventos: </label>
                                         <div class="input-group">
-                                            <input id="Profesor" class="form-control input-flat" placeholder="Ingrese Nombre y Apelido">
+                                            <input id="EventoID" class="form-control input-flat" placeholder="Evento">
                                             <div class="input-group-addon">
                                                 <i class="fa fa-search"></i>
                                             </div>
@@ -47,15 +46,16 @@
                                     <div class="form-group">
                                         <label id="aluOEmp">Ciclo Lectivo</label>
                                         <select id="selAnioLectivo" class="form-control bg-ash border-none">
-                                            <option value="2017">2017</option>
-                                            <option value="2018" selected>2018</option>
-                                            <option value="2019">2019</option>
+                                            <option value="2019" selected>2019</option>
                                             <option value="2020">2020</option>
+                                            <option value="2020">2021</option>
+                                            <option value="2020">2023</option>
+                                            <option value="2020">2024</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-sm-2">
-                                    <button type="button" class="btn m-b-10 m-t-35 btn-success m-r-10 sbmt-btn border-none" onclick="GetListadoCursosProfesores();">Buscar</button>
+                                    <button type="button" class="btn m-b-10 m-t-35 btn-success m-r-10 sbmt-btn border-none" onclick="GetEventos();">Buscar</button>
                                     @*<button type="button" id="btnLimpiar" class="btn m-b-10 m-t-35 btn-primary m-r-10 sbmt-btn border-none pull-left">Limpiar</button>*@
                                 </div>
                             </div>
@@ -68,21 +68,35 @@
                     <div class="col-lg-12">
                         <div class="card alert">
                             <div class="card-header m-b-20">
-                                <h4>Listado de Cuotas</h4>
+                                <h4>Listado de Eventos</h4>
                             </div>
                             <div class="bootstrap-data-table-panel">
                                 <div class="table-responsive">
                                     <table id="tablaDatos" class="table table-bordered table-responsive table-hover table-striped tabla-centrada">
-                                        <thead>
+                                        <thead id="theadEventos" style="visibility:hidden;">
                                             <tr>
-                                                <th>Profesor</th>
-                                                <th>Ciclo Lectivo</th>
-                                                <th>Comisión</th>
+                                                <th>Evento</th>
+                                                <th>Estado</th>
+                                                <th>Estado 2</th>
+                                                <th>Tiempo</th>
+                                                <th>Agencia</th>
+                                                <th>Barrio</th>
+                                                <th>Localidad</th>
+                                                <th>Municipio</th>
+                                                <th>Placa</th>
+                                                <th>Fecha Carga</th>
                                                 <th>Fecha Inicio</th>
-                                                <th>Aula</th>
-                                                <th>Dia</th>
-                                                <th>Desde</th>
-                                                <th>Hasta</th>
+                                                <th>Fecha Fin</th>
+                                                <th>Tipo</th>
+                                                <th>Colaborador</th>
+                                                <th>Responsable</th>
+                                                <th>N° Contacto</th>
+                                                <th>Cédula</th>
+                                                <th>Dirección</th>
+                                                <th>Tipo Trabajo</th>
+                                                <th>CoordX</th>
+                                                <th>CoordY</th>
+                                                <th>Origen</th>
                                             </tr>
                                         </thead>
                                     </table>
@@ -95,3 +109,5 @@
         </div>
     </div>
 </div>
+<script src="~/assets/js/lib/jquery.min.js"></script>
+<script src="~/Scripts/ScriptsViews/ConsultaEventos.js"></script>

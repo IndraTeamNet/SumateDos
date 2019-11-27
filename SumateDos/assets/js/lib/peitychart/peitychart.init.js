@@ -1,10 +1,6 @@
 $(function() {
     "use strict";
     // Just the defaults.
-    $(".bar-line").peity("bar",{
-        width: '100',
-        height: '100'
-    })
     $("span.pie").peity("pie",{
         width: '50',
         height: '50'
@@ -23,6 +19,10 @@ $(function() {
 
     $(".bar").peity("bar",{
         width: '300',
+        height: '100'
+    })
+    $(".bar-line").peity("bar",{
+        width: '100',
         height: '100'
     })
     $(".bar-colours-1").peity("bar", {

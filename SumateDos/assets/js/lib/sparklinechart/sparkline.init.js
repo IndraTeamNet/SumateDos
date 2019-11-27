@@ -269,28 +269,6 @@ $(document).ready(function() {
             barSpacing: '5',
             barColor: '#f5c42a'
         });
-        $("#sparkline23").sparkline([5,6,1,8,9,4,7,10,11,12,10,4,7,10], {
-            type: 'bar',
-            height: '200',
-            barWidth: 40,
-            barSpacing: 40,
-            barColor: '#03a9f5'
-        });
-        $('#sparklinedash24').sparkline([ 0, 1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2, 1, 0], {
-            type: 'bar',
-            height: '30',
-            barWidth: '4',
-            resize: true,
-            barSpacing: '5',
-            barColor: '#f5c42a'
-        });
-        $("#sparkline25").sparkline([4,5,7,9,11,9,7,5,4], {
-            type: 'bar',
-            height: '200',
-            barWidth: 50,
-            barSpacing: 40,
-            barColor: '#1de9b6'
-        });
     }
     var sparkResize;
 

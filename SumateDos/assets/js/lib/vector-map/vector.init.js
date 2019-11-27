@@ -10,11 +10,11 @@
         backgroundColor: null,
         color: '#ffffff',
         hoverOpacity: 0.7,
-        selectedColor: '#1de9b6',
+        selectedColor: '#777',
         enableZoom: true,
         showTooltip: true,
         values: sample_data,
-        scaleColors: ['#1de9b6', '#03a9f5'],
+        scaleColors: ['#000', '#006491'],
         normalizeFunction: 'polynomial'
     });
 

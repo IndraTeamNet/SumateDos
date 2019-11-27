@@ -83,3 +83,8 @@ C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\SumateDos\obj\Debug\SumateD
 C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\SumateDos\obj\Debug\SumateDos.csproj.CopyComplete
 C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\SumateDos\obj\Debug\SumateDos.dll
 C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\SumateDos\obj\Debug\SumateDos.pdb
+C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\SumateDos\bin\Modelo.dll
+C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\SumateDos\bin\AccesoADatos.dll
+C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\SumateDos\bin\Modelo.pdb
+C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\SumateDos\bin\AccesoADatos.pdb
+C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\SumateDos\bin\AccesoADatos.dll.config

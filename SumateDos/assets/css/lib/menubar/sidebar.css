@@ -107,12 +107,12 @@ right: 45px;
 .sidebar .nano-content > ul li:hover > a,
 .sidebar .nano-content > ul li.active > a,
 .sidebar .nano-content > ul li.open > a {
-    color: #03A9F5 ;
+    color: #ed008c ;
     position: relative;
 }
 
 .sidebar .nano-content > ul li.active > a::before {
-    background: #03A9F5 ;
+    background: #ed008c ;
     content: "";
     height: 100%;
     left: 0;
