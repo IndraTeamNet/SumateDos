@@ -29,5 +29,32 @@ namespace AccesoADatos.DAL
                 throw ex;
             }
         }
+
+        public static bool GetLogin(string pCadenaConexion, string pUsuario, string pPass)
+        {
+            try
+            {
+                using (OracleConnection OraCon = new OracleConnection(pCadenaConexion))
+                {
+                    DataSet dsEventos = new DataSet();
+                    OracleCommand oraCmd = new OracleCommand("select usr_id,pswrd from persl");
+                    OracleDataReader oraDr= oraCmd.ExecuteReader();
+                    if (oraDr.HasRows )
+                    {
+                        DataTable DTLogin = new DataTable();
+
+                        DTLogin.Load(oraDr);
+
+
+                    }
+                    
+                    return true;
+                }
+            }
+            catch (OracleException ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

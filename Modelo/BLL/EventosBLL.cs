@@ -21,5 +21,17 @@ namespace Modelo.Entidades
                 throw ex;
             }
         }
+
+        public static bool GetLogin(string pCadenaConexion,string pUsuario, string pPass)
+        {
+            try
+            {
+                return EventosDAL.GetLogin(pCadenaConexion, pUsuario,pPass);
+            }
+            catch (OracleException ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

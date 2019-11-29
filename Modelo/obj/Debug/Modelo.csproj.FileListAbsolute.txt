@@ -7,3 +7,12 @@ C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\Modelo\obj\Debug\Modelo.csp
 C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\Modelo\obj\Debug\Modelo.csproj.CopyComplete
 C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\Modelo\obj\Debug\Modelo.dll
 C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\Modelo\obj\Debug\Modelo.pdb
+C:\Magodoy\Mikael\Archivo de Trabajos\Enelint\SumateDosGit\SumateDos\SumateDos\Modelo\bin\Debug\Modelo.dll
+C:\Magodoy\Mikael\Archivo de Trabajos\Enelint\SumateDosGit\SumateDos\SumateDos\Modelo\bin\Debug\Modelo.pdb
+C:\Magodoy\Mikael\Archivo de Trabajos\Enelint\SumateDosGit\SumateDos\SumateDos\Modelo\bin\Debug\AccesoADatos.dll
+C:\Magodoy\Mikael\Archivo de Trabajos\Enelint\SumateDosGit\SumateDos\SumateDos\Modelo\bin\Debug\AccesoADatos.pdb
+C:\Magodoy\Mikael\Archivo de Trabajos\Enelint\SumateDosGit\SumateDos\SumateDos\Modelo\bin\Debug\AccesoADatos.dll.config
+C:\Magodoy\Mikael\Archivo de Trabajos\Enelint\SumateDosGit\SumateDos\SumateDos\Modelo\obj\Debug\Modelo.csprojAssemblyReference.cache
+C:\Magodoy\Mikael\Archivo de Trabajos\Enelint\SumateDosGit\SumateDos\SumateDos\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+C:\Magodoy\Mikael\Archivo de Trabajos\Enelint\SumateDosGit\SumateDos\SumateDos\Modelo\obj\Debug\Modelo.dll
+C:\Magodoy\Mikael\Archivo de Trabajos\Enelint\SumateDosGit\SumateDos\SumateDos\Modelo\obj\Debug\Modelo.pdb

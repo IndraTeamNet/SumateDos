@@ -6,3 +6,11 @@ C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\AccesoADatos\obj\Debug\Acce
 C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\AccesoADatos\obj\Debug\AccesoADatos.csproj.CopyComplete
 C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\AccesoADatos\obj\Debug\AccesoADatos.dll
 C:\Users\sjpalacio\Desktop\DATOS\SumateGIT\SumateDos\AccesoADatos\obj\Debug\AccesoADatos.pdb
+C:\Magodoy\Mikael\Archivo de Trabajos\Enelint\SumateDosGit\SumateDos\SumateDos\AccesoADatos\bin\Debug\AccesoADatos.dll.config
+C:\Magodoy\Mikael\Archivo de Trabajos\Enelint\SumateDosGit\SumateDos\SumateDos\AccesoADatos\bin\Debug\AccesoADatos.dll
+C:\Magodoy\Mikael\Archivo de Trabajos\Enelint\SumateDosGit\SumateDos\SumateDos\AccesoADatos\bin\Debug\AccesoADatos.pdb
+C:\Magodoy\Mikael\Archivo de Trabajos\Enelint\SumateDosGit\SumateDos\SumateDos\AccesoADatos\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Magodoy\Mikael\Archivo de Trabajos\Enelint\SumateDosGit\SumateDos\SumateDos\AccesoADatos\obj\Debug\AccesoADatos.csprojAssemblyReference.cache
+C:\Magodoy\Mikael\Archivo de Trabajos\Enelint\SumateDosGit\SumateDos\SumateDos\AccesoADatos\obj\Debug\AccesoADatos.csproj.CopyComplete
+C:\Magodoy\Mikael\Archivo de Trabajos\Enelint\SumateDosGit\SumateDos\SumateDos\AccesoADatos\obj\Debug\AccesoADatos.dll
+C:\Magodoy\Mikael\Archivo de Trabajos\Enelint\SumateDosGit\SumateDos\SumateDos\AccesoADatos\obj\Debug\AccesoADatos.pdb

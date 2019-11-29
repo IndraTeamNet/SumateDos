@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Adminity : Widget</title>
+
+    
+</head>
+
+<body class="bg-primary">
+
+    <div class="unix-login">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3">
+                    <div class="login-content">
+                        <div class="login-logo">
+                            <a href="index.html"><span>Foodmin</span></a>
+                        </div>
+                        <div class="login-form">
+                            <h4>Administratior Login</h4>
+                            <form>
+                                <div class="form-group">
+                                    <label>Usuario:</label>
+                                    <input id="txtUsuario" type="text" class="form-control" placeholder="Usuario" >
+                                </div>
+                                <div class="form-group">
+                                    <label>Contraseña:</label>
+                                    <input id="txtPass" type="password" class="form-control" placeholder="Contraseña">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Remember Me
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30" onclick="GetUsuario()">Sign in</button>
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="~/Scripts/ScriptsViews/Login.js"></script>
+</body>
+
+</html>
