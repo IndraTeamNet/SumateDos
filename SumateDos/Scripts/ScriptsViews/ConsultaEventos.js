@@ -12,6 +12,12 @@ function GetEventos() {
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         type: "GET",
+        beforeSend: function () {
+            $("#spinner").toggle();
+        },
+        complete: function () {
+            $("#spinner").toggle();
+        },
         success: function (lstEventos) {
             var tabla = $('#tablaDatos').dataTable();
             if (tabla != null) tabla.fnDestroy();

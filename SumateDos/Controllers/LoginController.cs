@@ -18,8 +18,8 @@ namespace SumateDos.Controllers
             return View();
         }
 
-        [HttpGet]
-        public JsonResult GetUsuario(String pUsuario,string pPass)
+        [HttpPost]
+        public JsonResult GetLogin(string pUsuario,string pPass)
         {
             try
             {
@@ -33,26 +33,5 @@ namespace SumateDos.Controllers
                 throw e;
             }
         }
-
-        public string DataSetToJSON(DataSet ds)
-        {
-
-            Dictionary<string, object> dict = new Dictionary<string, object>();
-            foreach (DataTable dt in ds.Tables)
-            {
-                object[] arr = new object[dt.Rows.Count + 1];
-
-                for (int i = 0; i <= dt.Rows.Count - 1; i++)
-                {
-                    arr[i] = dt.Rows[i].ItemArray;
-                }
-
-                dict.Add(dt.TableName, arr);
-            }
-
-            JavaScriptSerializer json = new JavaScriptSerializer();
-            return json.Serialize(dict);
-        }
-
     }
 }

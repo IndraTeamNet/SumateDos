@@ -104,22 +104,22 @@ position: absolute;
 right: 45px;
 }
 
-.sidebar .nano-content > ul li:hover > a,
-.sidebar .nano-content > ul li.active > a,
-.sidebar .nano-content > ul li.open > a {
-    color: #ed008c ;
-    position: relative;
-}
+    .sidebar .nano-content > ul li:hover > a,
+    .sidebar .nano-content > ul li.active > a,
+    .sidebar .nano-content > ul li.open > a {
+        color: #17a2b8;
+        position: relative;
+    }
 
-.sidebar .nano-content > ul li.active > a::before {
-    background: #ed008c ;
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 3px;
-}
+        .sidebar .nano-content > ul li.active > a::before {
+            background: #17a2b8;
+            content: "";
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 3px;
+        }
 
 .sidebar .nano-content > ul li.open > a > .sidebar-collapse-icon {
     -webkit-transform: rotate(-180deg);

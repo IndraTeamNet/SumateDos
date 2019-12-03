@@ -30,6 +30,11 @@
     <link href="~/assets/css/select2.css" rel="stylesheet" />
     <link href="~/assets/pluggins/timepicker/bootstrap-timepicker.min.css" rel="stylesheet" />
     <link href="~/assets/css/lib/calendar/fullcalendar.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+    <!-- JQUERY VENDOR -->
+    <script src="~/assets/js/lib/jquery.min.js"></script>
+    <script src="~/assets/js/lib/bootstrap.min.js"></script>
 
 </head>
 <body class="sidebar-hide">
@@ -50,6 +55,10 @@
                     XmlTextReader readXML = new XmlTextReader(cArchivo);
                     int contProc = 0;
                     @:<ul id="menu">
+
+
+
+
 
 
 
@@ -165,14 +174,23 @@
         </div>
     </div>
 
+    <!--><!-->
+    <div id="ModalCargando " class="modal">
+        <div class="modal-500 modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="myModalLabel">Cargando.. <strong><span id="curNombre"></span></strong></p>
+                </div>      
+            </div>
+        </div>
+    </div>
+
     <div id="spinner" class="loading" style="display: none;">
         <img id="img-spinner" src="~/assets/images/ajax-loader.gif" alt="Loading" />
     </div>
 
     <!-- LIBRERIAS JQUERY -->
-    <!-- JQUERY VENDOR -->
-    <script src="~/assets/js/lib/jquery.min.js"></script>
-    <script src="~/assets/js/lib/bootstrap.min.js"></script>
+ 
 
     <!-- NANO SCROLLER -->
     <script src="~/assets/js/lib/jquery.nanoscroller.min.js"></script>

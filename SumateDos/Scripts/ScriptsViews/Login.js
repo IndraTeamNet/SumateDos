@@ -3,24 +3,25 @@
 //------------------------------------------------------------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-
+    $(".header").css({ "visibility": "hidden" });
 });
 
-function GetUsuario() {
+
+function GetLogin() {
 
     var vUsuario = $("#txtUsuario").val();
     var vPass = $('#txtPass').val();
 
     $.ajax({
-        url: "/Login/GetUsuario",
-        type: "GET",
+        url: "/Login/GetLogin",
+        type: "POST",
         dataType: "json",
         data: { 'pUsuario': vUsuario, 'pPass': vPass },
-        processData: false,
+        processData: true,
         async: false,
         success: function (bLoginCorrecto) {
-            if (bLoginCorrecto) {
-                alert("funca");
+            if (bLoginCorrecto) {           
+                window.location.href = "../Eventos/ConsultaEventos";
             }
             else {
                 //$("#txtModalInfo").empty();
