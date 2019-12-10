@@ -37,7 +37,7 @@
     <script src="~/assets/js/lib/bootstrap.min.js"></script>
 
 </head>
-<body class="sidebar-hide">
+<body class="sidebar-hide DisfrazBody">
     <div class="sidebar">
         <div class="nano">
             <div class="nano-content">
@@ -152,9 +152,7 @@
         </div>
     </div>
     @RenderBody()
-    <div id="footerGlobal" class="footer">
-        <p class="small">INDRA - @DateTime.Today.Year</p>
-    </div>
+ 
 
     <!-- Modal Info -->
     <div id="modalInfo" class="modal">
@@ -233,6 +231,18 @@
     <!-- MENU DERECHO (CERRAR SESION)-->
     <script src="~/assets/js/scripts.js"></script>
 </body>
+<footer>   
+    <div id="footerGlobal" class="footer">
+        <NAV>
+            <P>
+                @*<A HREF="/credits.html">Credits</A> —
+                <A HREF="/tos.html">Terms of Service</A> —
+                <A HREF="/index.html">Blog Index</A>*@
+            </P>
+        </NAV>
+        <p class="small">INDRA - @DateTime.Today.Year</p>
+    </div>
+</footer>
 </html>
 
 <script type="text/javascript">

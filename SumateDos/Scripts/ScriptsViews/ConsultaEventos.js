@@ -3,7 +3,7 @@
 //------------------------------------------------------------------------------------------------------------------------------------------
 
 $(document).ready(function () {
-
+    $('.DisfrazBody').addClass("FondoIngreso");
 });
 
 function GetEventos() {
@@ -28,7 +28,18 @@ function GetEventos() {
                 dom: 'lBfrtip',
                 lengthMenu: [[10, 25, -1], [10, 25, "All"]],
                 buttons: [
-                    'excel', 'pdf', 'print'
+                    'excel', 'print'
+                ,{
+                    extend: 'pdfHtml5',
+                    orientation: 'landscape',
+                    pageSize: 'LEGAL',
+                     customize: function (doc) {
+                        doc.defaultStyle.fontSize = 7; //<-- set fontsize to 16 instead of 10 
+                    },  
+                      exportOptions: {
+                        columns: [0,1, 2, 3, 4, 5, 7, 8, 9, 10,11,13,14,15,16,17,18,19,20]
+                    }
+                    }               
                 ]
             });
         },

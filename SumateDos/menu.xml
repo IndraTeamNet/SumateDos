@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Raiz>
   <Menu id="1" clase="icon fa fa-laptop" text="Eventos/Usuarios">
-    <Proceso id="1.1" text="Consulta de Eventos" url="/Eventos"></Proceso>
+    <Proceso id="1.1" text="Consulta de Actividades" url="/Eventos"></Proceso>
     <Proceso id="1.3" text="Desbloqueo Usuarios" url="#"></Proceso>
   </Menu>
 </Raiz>
